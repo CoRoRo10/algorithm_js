@@ -30,3 +30,16 @@ const oddCells = function (row, col, indices) {
 
   return result;
 };
+
+// 참고
+// var oddCells = function (n, m, indices) {
+//   const nn = Array(n).fill(false);
+//   const mm = Array(m).fill(false);
+//   indices.forEach(([x, y]) => {
+//     nn[x] = !nn[x];
+//     mm[y] = !mm[y];
+//   });
+//   const numR = nn.reduce((acc, cur) => (cur ? acc + 1 : acc), 0);
+//   const numC = mm.reduce((acc, cur) => (cur ? acc + 1 : acc), 0);
+//   return numR * m + numC * n - 2 * numR * numC;
+// };
